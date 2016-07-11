@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>WildFly Swarm</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/wildfly-swarm.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <header>
+            <img class="logo" src="images/swarm_logo_100px.png" />
+        </header>
+
+        <div class="slides">
+            <section class="no-header">
+                <!--<h1><img class="plain" src="images/swarm_logo_200px.png" style="margin-left: 125px;"/></h1>-->
+                <h1>Microservices with WildFly Swarm</h1>
+                <p>
+                    <small><em>By:</em><br>James R. Perkins &lt;<a href="mailto:jperkins@redhat.com" target="_self">jperkins@redhat.com</a>&gt;
+                </small>
+                </p>
+            </section>
+            <section>
+                <h3>What are Microservices anyway?</h3>
+                <blockquote>
+                    In short, the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare minimum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.
+                </blockquote>
+                - Martin Fowler, ThoughtWorks
+            </section>
+            <section>
+                <h2>Keep in Touch</h2>
+                <ul>
+                    <li>GitHub <a href="https://github.com/wildfly-swarm">https://github.com/wildfly-swarm</a></li>
+                    <li>Twitter <a href="https://twitter.com/wildflyswarm">@wildflyswarm</a></li>
+                    <li>IRC #wildfly-swarm</li>
+                    <li>Website <a href="http://wildfly-swarm.io/">http://wildfly-swarm.io/</a></li>
+                    <li>User Guide <a href="http://wildfly-swarm.gitbooks.io/wildfly-swarm-users-guide/content/">http://wildfly-swarm.gitbooks.io/wildfly-swarm-users-guide/content/</a></li>
+                </ul>
+            </section>
+        </div>
+        <footer>
+            <img class="logo" src="images/redhat-logo.png" />
+        </footer>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            progress: true,
+            history: true,
+            controls: false,
+            //parallaxBackgroundImage: 'images/background.png',
+
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            }, {
+                src: 'plugin/markdown/markdown.js'
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }]
+        });
+    </script>
+</body>
+
+</html>

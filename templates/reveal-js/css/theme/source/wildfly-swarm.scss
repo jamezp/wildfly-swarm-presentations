@@ -1,0 +1,48 @@
+/**
+ * Black theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url("../../lib/font/overpass/recommended.css");
+
+$wfsDefaultColor: #f7931e;
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #323232;
+
+$mainFont: 'Overpass', sans-serif;
+$linkColor: $wfsDefaultColor;
+$linkColorHover: #cc0000;
+$headingColor: $wfsDefaultColor;
+$headingFont: 'Overpass', Impact, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: -0.03em;
+$headingTextTransform: none;
+$selectionBackgroundColor: #1B5564;
+$mainFontSize: 30px;
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal img .logo {
+     position: absolute;
+     top: 0px;
+     left: 0px;
+}
+
+footer .logo {
+     position: absolute;
+     bottom: 0px;
+     right: 0px;
+ }
